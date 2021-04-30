@@ -1,0 +1,12 @@
+name: Hydrogen
+license: MIT
+licenselink: https://github.com/jamalmarri/hydrogen/blob/main/LICENSE
+description: A simple and minimalistic theme utilizing Bootstrap with a few changes.
+homepage: https://github.com/jamalmarri/hydrogen
+tags: []
+features: []
+min_version: 0.41.0
+
+author:
+  name: Jamal Marri
+  homepage: https://marri.dev
