@@ -1,0 +1,23 @@
+body {
+    background-color: #D8E2DC;
+}
+
+a {
+    color: #000000;
+}
+
+div.title {
+    margin-top: 20px;
+}
+
+h1.post, h3.post {
+    margin-bottom: 0px;
+}
+
+i.post {
+    font-size: 0.9em;
+}
+
+div.post {
+    margin-top: 10px;
+}
