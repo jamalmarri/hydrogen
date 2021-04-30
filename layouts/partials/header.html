@@ -1,0 +1,17 @@
+<div class="jumbotron text-center title">
+    <h1 class="display-4">{{ .Site.Title }}</h1>
+    <h4><i>{{ .Site.Params.subtitle }}</i></h4>
+</div>
+
+<div class="nav justify-content-center">
+    {{ $list := (.Site.Menus.main) }}
+    {{ $len := (len $list) }}
+    {{ range $index, $element := $list }}
+    <a class="nav-link" href="{{ .URL }}">
+    {{ .Name | safeHTML }}
+    </a>
+    {{ if ne (add $index 1) $len}}
+    <p class="nav-link">│</p>
+    {{ end }}
+    {{ end }}
+</div>
