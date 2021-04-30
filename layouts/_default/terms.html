@@ -1,0 +1,10 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div id="tags">
+    {{ range .Data.Terms.Alphabetical }}
+    <p>
+        <a id="tags" href="{{ .Page.Permalink }}"><h4><span class="badge badge-pill bg-secondary">#{{ .Page.Title }}</span></h3></a>
+    </p>
+    {{ end }}
+</div>
+{{ end }}

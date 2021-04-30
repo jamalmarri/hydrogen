@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <h1 class="post">{{ .Title }}</h1>
+    <i class="text-secondary post">posted on {{.Date.Format "2 Jan 2006"}}</i>
+    <div class="post">
+        {{ .Content }}
+        <p><b>Tags:</b>&nbsp;
+            {{ range .Params.tags }}
+                <a href="/tags/{{ . }}/"><span class="badge badge-pill bg-secondary">#{{ . }}</span></a>&nbsp;
+            {{ end }}
+        </p>
+    </div>
+{{ end }}
